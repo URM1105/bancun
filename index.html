@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#f7f3ee">
+<title>半寸 · 少看秤,多看寸</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ============ 落地页 ============ -->
+<div id="landing" class="landing">
+  <header class="nav" id="nav">
+    <a class="brand" href="#top" aria-label="半寸首页">
+      <span class="brand-mark">半寸</span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#why">为什么是半寸</a>
+      <a href="#how">怎么用</a>
+      <a href="#features">功能与边界</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="btn btn-ghost" id="navEnter">进入产品</button>
+      <button class="btn btn-primary btn-sm" id="navStart">开始使用</button>
+      <button class="menu-toggle" id="menuToggle" aria-label="菜单">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="top">
+      <div class="hero-inner">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">轻量化减脂可视化陪伴工具</p>
+          <h1>少看秤,<br><em>多看寸。</em></h1>
+          <p class="hero-sub">每天记一次体重,用简约线稿看见三十天后的可能轮廓。<br>不做承诺,只是一份温柔的参考。</p>
+          <div class="hero-cta">
+            <button class="btn btn-primary btn-lg" id="heroStart">免注册,先体验</button>
+            <button class="btn btn-outline btn-lg" id="heroDemo">试一试模拟器</button>
+          </div>
+          <p class="hero-note">数据只在这台设备</p>
+        </div>
+        <div class="hero-visual reveal" id="heroVisual">
+          <div class="hero-card">
+            <div class="hero-card-top">
+              <span class="dot-row"><i></i><i></i><i></i></span>
+              <span class="hero-card-label">身形模拟 · 参考</span>
+            </div>
+            <div class="hero-figures" id="heroFigures"></div>
+            <div class="hero-card-foot">
+              <span class="tag-line">当前轮廓</span>
+              <span class="arrow">→</span>
+              <span class="tag-line accent">30 天后参考</span>
+            </div>
+          </div>
+          <div class="float-note float-note-1">记录一次<br>就看得见一点点</div>
+          <div class="float-note float-note-2">不比较 · 不焦虑</div>
+        </div>
+      </div>
+      <div class="hero-scroll">向下看看 <span>↓</span></div>
+    </section>
+
+    <!-- 问题区 -->
+    <section class="section why" id="why">
+      <div class="section-head reveal">
+        <p class="eyebrow">为什么是半寸</p>
+        <h2>你没变懒,只是<br>看不到自己在变好。</h2>
+      </div>
+      <div class="problem-grid">
+        <div class="problem-card reveal">
+          <span class="pnum">01</span>
+          <h3>反馈周期太长</h3>
+          <p>日更体重的变化常小于称重误差,一两周感知不到进展,人最容易在这时放弃。</p>
+        </div>
+        <div class="problem-card reveal">
+          <span class="pnum">02</span>
+          <h3>数字具有欺骗性</h3>
+          <p>水分、盐分、排便和生理周期会带来 2–3 公斤波动,单看体重常把正常波动误判为失败。</p>
+        </div>
+        <div class="problem-card reveal">
+          <span class="pnum">03</span>
+          <h3>关注点错位</h3>
+          <p>你更在意腰腹、臀部、大腿的形态,而多数工具只给体重和热量两个数字。</p>
+        </div>
+        <div class="problem-card reveal">
+          <span class="pnum">04</span>
+          <h3>工具走向两个极端</h3>
+          <p>记账式工具成本高、情绪价值低;社交打卡容易把减脂变成比较和焦虑。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 闭环区 -->
+    <section class="section how" id="how">
+      <div class="section-head center reveal">
+        <p class="eyebrow">核心闭环</p>
+        <h2>记录 → 模拟 → 反馈</h2>
+        <p class="section-desc">降低单次记录成本,让每一次模拟都能回应用户的坚持。</p>
+      </div>
+      <div class="flow-row reveal">
+        <div class="flow-step">
+          <div class="flow-icon">①</div>
+          <h4>轻松记录</h4>
+          <p>每日只需更新体重，维度可选填。</p>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step">
+          <div class="flow-icon">②</div>
+          <h4>看见轮廓</h4>
+          <p>简约线稿推演三十天后的可能样子。</p>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step">
+          <div class="flow-icon">③</div>
+          <h4>温柔反馈</h4>
+          <p>会根据目前变化情况给出适当建议。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 模拟器试玩 -->
+    <section class="section demo-section">
+      <div class="demo-wrap reveal">
+        <div class="demo-copy">
+          <p class="eyebrow">先试玩一下</p>
+          <h2>拖动滑块,<br>看看可能的变化。</h2>
+          <p class="section-desc">只是一个理想化参考示意,不代表真实预测结果。选一个体型,再设定三十天的变化幅度。</p>
+          <div class="demo-controls">
+            <label class="field-label">体型</label>
+            <div class="chip-group" id="demoBodyTypes"></div>
+            <label class="field-label" style="margin-top:18px">三十天变化 <span id="demoLossLabel" class="accent">−1.5 kg</span></label>
+            <input type="range" id="demoLoss" min="-4" max="0" step="0.5" value="-1.5">
+            <div class="range-ticks"><span>−4 kg</span><span>维持</span></div>
+            <p class="demo-reason">为了更稳妥的节奏,最多设定 −4 kg / 30 天。</p>
+          </div>
+        </div>
+        <div class="demo-visual">
+          <div class="demo-card">
+            <div class="compare-head"><span>现在</span><span>30 天后 · 参考</span></div>
+            <div class="demo-figures" id="demoFigures"></div>
+            <p class="sim-gain-note">示意图的差异已放大约 2.5 倍以便看清，实际变化更小。</p>
+            <p class="demo-disclaimer" id="demoTalk">这是一份温柔的参考,你的身体有自己的节奏。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 功能与边界 -->
+    <section class="section features" id="features">
+      <div class="section-head reveal">
+        <p class="eyebrow">功能与边界</p>
+        <h2>我们做什么,<br>也把不做什么讲清楚。</h2>
+      </div>
+      <div class="feature-cols">
+        <div class="feature-block reveal">
+          <h3><span class="check">✓</span> 会做的事</h3>
+          <ul>
+            <li>五种体型的简约线稿轮廓推演</li>
+            <li>体重与围度趋势、快照相册</li>
+            <li>记录、模拟、反馈的完整闭环</li>
+            <li>本地保存、备份与恢复</li>
+          </ul>
+        </div>
+        <div class="feature-block soft reveal">
+          <h3><span class="dash">—</span> 不做的事</h3>
+          <ul>
+            <li>不做写实人像、面部渲染或照片上传</li>
+            <li>不提供医疗、营养、训练方案</li>
+            <li>不做社交排行、点赞与比较</li>
+            <li>不把模拟结果包装成真实健康预测</li>
+          </ul>
+        </div>
+      </div>
+      <div class="boundary-note reveal">
+        <div class="bn-icon">!</div>
+        <div>
+          <h4>温柔的安全边界</h4>
+          <p>体重范围在 20–300 kg 之间;若体重对应的身体质量指数偏低,我们不提供减重模拟,而是建议你关注身体感受、必要时寻求专业帮助。半寸不面向未成年人。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 结尾 CTA -->
+    <section class="section cta-section">
+      <div class="cta-inner reveal">
+        <p class="eyebrow">半寸时光,自在生长</p>
+        <h2>从今天记一次开始。</h2>
+        <button class="btn btn-primary btn-lg" id="ctaStart">免注册,开始体验</button>
+        <p class="cta-small">数据只保存于这台设备,不上传、不共享。</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="brand-mark">半寸</span>
+        <p>少看秤,多看寸。<br>半寸时光,自在生长。</p>
+      </div>
+      <div class="footer-col">
+        <h5>产品</h5>
+        <a href="#why">为什么是半寸</a>
+        <a href="#how">怎么用</a>
+        <a href="#features">功能与边界</a>
+      </div>
+      <div class="footer-col">
+        <h5>说明</h5>
+        <a href="#" class="open-disclaimer">免责声明</a>
+        <a href="#" class="open-disclaimer">隐私与数据</a>
+        <a href="#" class="open-disclaimer">用户协议</a>
+      </div>
+      <div class="footer-col">
+        <h5>数据</h5>
+        <p class="footer-note">游客模式 · 数据仅存本机<br>不面向未成年人</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 半寸 · 一份温柔的参考</span>
+      <span>本工具不提供医疗建议,模拟结果不构成健康预测。</span>
+    </div>
+  </footer>
+</div>
+
+<!-- ============ 应用 ============ -->
+<div id="app" class="app" hidden>
+  <aside class="sidebar" id="sidebar">
+    <div class="side-brand" id="sideBrand"><span class="brand-mark">半寸</span></div>
+    <div class="side-mode" id="sideMode">试用中 · 数据只在这台设备上</div>
+    <nav class="side-nav" id="sideNav">
+      <button data-page="today" class="active"><span class="ico">◉</span>今日记录</button>
+      <button data-page="simulate"><span class="ico">◐</span>身形模拟</button>
+      <button data-page="dashboard"><span class="ico">▤</span>数据看板</button>
+      <button data-page="settings"><span class="ico">⚙</span>设置</button>
+    </nav>
+    <div class="side-foot">
+      <button id="btnBackup" class="side-link">备份与恢复</button>
+      <button id="btnDisclaimer" class="side-link">免责声明</button>
+    </div>
+    <button class="side-close" id="sideClose" aria-label="关闭">×</button>
+  </aside>
+
+  <div class="app-main">
+    <div class="app-topbar">
+      <button class="hamburger" id="hamburger" aria-label="菜单">☰</button>
+      <div class="topbar-title" id="topbarTitle">今日记录</div>
+      <div class="topbar-right">
+        <span class="mode-pill" id="modePill">游客体验</span>
+      </div>
+    </div>
+    <div class="app-content" id="appContent"></div>
+  </div>
+</div>
+
+<!-- ============ 引导流程 ============ -->
+<div id="onboarding" class="onboarding" hidden>
+  <div class="onb-progress"><span id="onbStep">1</span> / 3</div>
+  <div class="onb-close-wrap"><button id="onbClose" class="onb-close" aria-label="退出">×</button></div>
+  <div class="onb-body" id="onbBody"></div>
+</div>
+
+<!-- ============ 通用弹层 ============ -->
+<div id="modalRoot" class="modal-root" hidden></div>
+<div id="toastRoot" class="toast-root"></div>
+
+<script src="app.js"></script>
+</body>
+</html>

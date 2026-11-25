@@ -1,0 +1,118 @@
+{
+  "_说明": "人体轮廓模板 —— 从参考图(服装制版女性模板 153x435)实测提取。所有横向坐标 x 与纵向坐标 y 均为占身高的百分比(身高=脚底100%)。绘制时所有轮廓 = 本模板形状 + 数据(体型/减重)驱动的宽度修正。此文件与 app.js 中 TPL 常量保持一致。",
+  "source": {
+    "image": "参考图:单人正面、双臂自然下垂、双腿并拢的服装制版女性人体模板",
+    "pixelWidth": 153,
+    "pixelHeight": 435,
+    "bodyTopY": 8,
+    "bodyFootY": 428,
+    "bodyPixelHeight": 420,
+    "centerX": 76,
+    "measuredAt": "2026-11-24",
+    "revisedAt": "连续外轮廓精修:肩链四点、胸腰臀、手臂随躯干外移、平底脚"
+  },
+  "scale": {
+    "headToBodyRatio": 8.4,
+    "_注": "参考图实测头高约50px/身高420px≈8.4头身(时装比例)。可调;默认与参考图一致。",
+    "headHeightPct": 12,
+    "shoulderWidthPct": 18.6,
+    "neckWidthPct": 2.5,
+    "upperArmMaxPct": 5.7,
+    "wristPct": 3.3,
+    "kneeWidthPct": 5.0,
+    "ankleWidthPct": 3.3
+  },
+  "landmarks": [
+    {"name": "头顶", "y": 0, "_measured": "正面剪影最高点"},
+    {"name": "下巴", "y": 12, "_measured": "y≈58px → 11.9%"},
+    {"name": "颈根肩线", "y": 17.5, "_measured": "y≈82px → 17.6%"},
+    {"name": "肩外点", "y": 21.0, "_measured": "斜肩落点,半宽≈9.3%"},
+    {"name": "腋下", "y": 23.8, "_measured": "半宽≈7.2%"},
+    {"name": "胸点", "y": 26.5, "_measured": "半宽≈7.9%"},
+    {"name": "腰最细", "y": 34, "_measured": "半宽≈5.4%"},
+    {"name": "臀最宽", "y": 46.5, "_measured": "半宽≈9.0%"},
+    {"name": "裆", "y": 52.6, "_measured": "双腿内缘交汇"},
+    {"name": "膝", "y": 72, "_measured": "半宽≈5.0%"},
+    {"name": "小腿最粗", "y": 80, "_measured": "半宽≈5.7%"},
+    {"name": "脚踝", "y": 94, "_measured": "半宽≈3.3%"},
+    {"name": "脚底", "y": 100, "_measured": "y≈428px → 100%"}
+  ],
+  "silhouette": {
+    "_注": "x 为相对身体中轴的半宽(占身高%);左右镜像。y 为占身高%。关键点带 key,用于体型/减重宽度修正。",
+    "shoulderChain": [
+      {"y": 17.5, "x": 2.5, "key": "neck"},
+      {"y": 18.4, "x": 5.0, "key": "trap"},
+      {"y": 19.6, "x": 8.0, "key": "trap"},
+      {"y": 21.0, "x": 9.3, "key": "shoulder"}
+    ],
+    "torsoSide": [
+      {"y": 23.8, "x": 7.2, "key": "armpit"},
+      {"y": 26.5, "x": 7.9, "key": "bust"},
+      {"y": 30, "x": 6.7, "key": "underbust"},
+      {"y": 34, "x": 5.4, "key": "waist"},
+      {"y": 40, "x": 7.4, "key": "hipUpper"},
+      {"y": 46.5, "x": 9.0, "key": "hip"},
+      {"y": 52, "x": 8.4, "key": "thighTop"},
+      {"y": 58, "x": 7.7, "key": "thighTop"},
+      {"y": 64, "x": 6.8, "key": "thigh"},
+      {"y": 69, "x": 5.7},
+      {"y": 72, "x": 5.0, "key": "knee"},
+      {"y": 80, "x": 5.7, "key": "calf"},
+      {"y": 88, "x": 4.3},
+      {"y": 94, "x": 3.3, "key": "ankle"},
+      {"y": 96.5, "x": 3.5, "key": "foot"},
+      {"y": 98.8, "x": 4.6, "key": "foot"},
+      {"y": 100, "x": 4.8, "key": "foot"}
+    ],
+    "armOuter": [
+      {"y": 26, "x": 11.5},
+      {"y": 34, "x": 11.9},
+      {"y": 40, "x": 12.3},
+      {"y": 50, "x": 12.9},
+      {"y": 57, "x": 12.9}
+    ],
+    "hand": [
+      {"y": 59, "x": 13.5},
+      {"y": 62, "x": 13.7},
+      {"y": 64.5, "x": 13.2},
+      {"y": 65.8, "x": 12.4},
+      {"y": 65, "x": 11.7},
+      {"y": 62.5, "x": 11.5},
+      {"y": 59.5, "x": 11.2}
+    ],
+    "armInner": [
+      {"y": 23.8, "x": 7.2, "key": "armpit"},
+      {"y": 28, "x": 8.4},
+      {"y": 34, "x": 8.9},
+      {"y": 40, "x": 9.4},
+      {"y": 50, "x": 10.2},
+      {"y": 57, "x": 11.1}
+    ],
+    "legInner": [
+      {"y": 52.6, "x": 0.0},
+      {"y": 58, "x": 0.6},
+      {"y": 65, "x": 0.8},
+      {"y": 72, "x": 0.7},
+      {"y": 80, "x": 1.4},
+      {"y": 88, "x": 1.5},
+      {"y": 94, "x": 1.1},
+      {"y": 97, "x": 0.9},
+      {"y": 100, "x": 0.7}
+    ]
+  },
+  "bodyTypeModifiers": {
+    "_注": "体型相对模板的宽度乘数,在关键点(按 y)间线性插值。armpit 随 bust 变化,避免小钩。",
+    "pear":      {"shoulder": 0.96, "bust": 0.93, "waist": 1.06, "hip": 1.12, "thigh": 1.10, "calf": 1.06},
+    "apple":     {"shoulder": 1.03, "bust": 1.08, "waist": 1.34, "hip": 0.94, "thigh": 0.94, "calf": 0.94},
+    "hourglass": {"shoulder": 0.98, "bust": 1.15, "waist": 0.80, "hip": 1.12, "thigh": 1.02, "calf": 1.00},
+    "rectangle": {"shoulder": 1.00, "bust": 1.04, "waist": 1.26, "hip": 0.93, "thigh": 0.90, "calf": 0.92},
+    "mixed":     {"shoulder": 1.00, "bust": 1.00, "waist": 1.00, "hip": 1.00, "thigh": 1.00, "calf": 1.00}
+  },
+  "lossRatePerKg": {
+    "shoulder": 0.004, "bust": 0.030, "waist": 0.062, "hip": 0.045, "thigh": 0.040, "calf": 0.032
+  },
+  "measureKeyY": {
+    "shoulder": 21.0, "bust": 26.5, "waist": 34, "hip": 46.5, "thigh": 64, "calf": 80
+  },
+  "_final": "按用户提供的 figure_patch.js 精修:单一连续外轮廓(肩→手臂→手→腋→胸→腰→臀→腿→脚→内侧→裆+镜像),肩线四点渐变、手臂随躯干外移、腋下随胸围、去掉膝横线、平底脚;淡内裤线与锁骨弧。引擎用 Catmull-Rom 样条,模板+数据驱动。"
+}
